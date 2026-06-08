@@ -130,6 +130,7 @@
     "flag": "https://flagcdn.com/w320/es.png",
     "titleOdds": "+450",
     "finalOdds": "+240",
+    "qfOdds": "-150",
     "copy": "Tiki-taka rebooted with teenagers who dribble like the ball owes them money. The bookies have them lifting it.",
     "draftCase": "Co-favorite to win it all, so owning the champion pays, and they should pile up wins along the way.",
     "risk": "A young attack can go quiet, and Group H has a feisty Uruguay waiting."
@@ -145,6 +146,7 @@
     "flag": "https://flagcdn.com/w320/fr.png",
     "titleOdds": "+475",
     "finalOdds": "+240",
+    "qfOdds": "-130",
     "copy": "The Death Star with better cheekbones and Mbappé at warp speed. Draft them if you enjoy rooting for inevitability.",
     "draftCase": "Stacked, deep, and Mbappé-powered, with strong winner odds and Golden Boot equity baked in.",
     "risk": "A tough group featuring Norway and Senegal looms early, and locker-room drama is a French tradition."
@@ -160,6 +162,7 @@
     "flag": "https://flagcdn.com/w320/gb-eng.png",
     "titleOdds": "+700",
     "finalOdds": "+340",
+    "qfOdds": "-135",
     "copy": "Forever the bridesmaid and finally with the talent, England get an easy group, Kane up top, and a nation that will lose its mind either way.",
     "draftCase": "A soft group means early wins, and Kane gives real Golden Boot upside.",
     "risk": "Knockout chokes are practically a national pastime, and manager caution can stall them when it matters."
@@ -175,6 +178,7 @@
     "flag": "https://flagcdn.com/w320/pt.png",
     "titleOdds": "+850",
     "finalOdds": "+460",
+    "qfOdds": "+105",
     "copy": "Ronaldo's last dance fronting a genuinely loaded squad, equal parts golden generation and one man's farewell tour.",
     "draftCase": "Deep talent and a winnable group, and Ronaldo still buries penalties when the moment comes.",
     "risk": "Ronaldo minutes management is a real concern, and they could meet Argentina early in the bracket."
@@ -190,6 +194,7 @@
     "flag": "https://flagcdn.com/w320/ar.png",
     "titleOdds": "+900",
     "finalOdds": "+480",
+    "qfOdds": "-105",
     "copy": "Reigning champs with Messi on a farewell lap and a midfield that strangles you slowly, equal parts beautiful and infuriating.",
     "draftCase": "Defending champions with a friendly group and a real title path, and Messi still buries penalties.",
     "risk": "Messi is 38 with a tweaky hamstring, and a lot rides on his legs."
@@ -205,6 +210,7 @@
     "flag": "https://flagcdn.com/w320/br.png",
     "titleOdds": "+900",
     "finalOdds": "+430",
+    "qfOdds": "+100",
     "copy": "Five stars, endless flair, and vibes that swing from samba to soap opera. Vini Jr. is must-watch chaos.",
     "draftCase": "Brazil always reaches the latter stages and scores in bunches, making them a reliable source of wins and goals.",
     "risk": "Defensively shaky and emotionally volatile, they can implode in a single bad night."
@@ -220,6 +226,7 @@
     "flag": "https://flagcdn.com/w320/de.png",
     "titleOdds": "+1400",
     "finalOdds": "+600",
+    "qfOdds": "+140",
     "copy": "A wounded giant rebuilding around Musiala, with Neuer un-retired to mind the net. Never, ever count Germany out.",
     "draftCase": "Tournament pedigree and a winnable group make them a threat, and deep runs are coded into their DNA.",
     "risk": "Recent majors have been rough, and goalkeeping drama still lingers around the squad."
@@ -235,6 +242,7 @@
     "flag": "https://flagcdn.com/w320/nl.png",
     "titleOdds": "+1600",
     "finalOdds": "+750",
+    "qfOdds": "+165",
     "copy": "The orange machine brings a great defense and a habit of peaking quietly. This is the team your smart friend secretly backs.",
     "draftCase": "Strong, balanced, with deep-run potential and a solid floor of clean sheets and wins.",
     "risk": "They can be dull and over-cautious, and their group featuring Japan is no gimme."
@@ -250,6 +258,7 @@
     "flag": "https://flagcdn.com/w320/be.png",
     "titleOdds": "+2200",
     "finalOdds": "+950",
+    "qfOdds": "+170",
     "copy": "The golden generation that never cashed in, now older but with Courtois still a wall. This is last call for this crew.",
     "draftCase": "An easy-ish group offers real early wins, and Courtois anchors the clean-sheet upside.",
     "risk": "An aging core means this group's best window may have already closed."
@@ -265,6 +274,7 @@
     "flag": "https://flagcdn.com/w320/no.png",
     "titleOdds": "+3000",
     "finalOdds": "+1300",
+    "qfOdds": "+190",
     "copy": "Finally back at a World Cup, and they brought Haaland along. One man, one mission, and maximum violence applied to nets.",
     "draftCase": "Haaland goals mean goals and possible wins in what could be a wide-open group.",
     "risk": "One-man reliance is a structural problem, and a brutal group with France and Senegal awaits."
@@ -280,6 +290,7 @@
     "flag": "https://flagcdn.com/w320/co.png",
     "titleOdds": "+4000",
     "finalOdds": "+1600",
+    "qfOdds": "+225",
     "copy": "James-led, rhythm-and-flair Colombia is quietly excellent and dances after every goal. Deeply fun to own.",
     "draftCase": "On a strong run, they can win the group and go deep, making them a quality source of wins.",
     "risk": "A group featuring Portugal is daunting, and Colombia can be streaky when the pressure lifts."
@@ -295,6 +306,7 @@
     "flag": "https://flagcdn.com/w320/jp.png",
     "titleOdds": "+4500",
     "finalOdds": "+3300",
+    "qfOdds": "+375",
     "copy": "Fearless, fast, and allergic to respecting bigger teams, they have beaten Germany and Spain for sport. This is genuine upset machinery.",
     "draftCase": "A genuine upset machine that can win the group and bank wins against anyone.",
     "risk": "They tend to beat giants and then drop points to minnows, and face a real knockout wall."
@@ -310,6 +322,7 @@
     "flag": "https://flagcdn.com/w320/ma.png",
     "titleOdds": "+5000",
     "finalOdds": "+2700",
+    "qfOdds": "+325",
     "copy": "The 2022 semifinal shock was no fluke: elite defense, Bono in goal, and a whole continent behind them.",
     "draftCase": "A proven dark horse with clean-sheet pedigree who can rack up wins and upsets.",
     "risk": "A group draw with Brazil looms, and goals can dry up against packed defenses."
@@ -325,6 +338,7 @@
     "flag": "https://flagcdn.com/w320/us.png",
     "titleOdds": "+5000",
     "finalOdds": "+2200",
+    "qfOdds": "+375",
     "copy": "Co-hosts with a golden-ish generation and a whole country pretending it understands offside. Home crowd, real upside.",
     "draftCase": "A host bump, a friendly schedule, and easy national-interest fun make early group wins very likely.",
     "risk": "Big-game inexperience is genuine, and the pressure of a home World Cup is a real factor."
@@ -340,6 +354,7 @@
     "flag": "https://flagcdn.com/w320/uy.png",
     "titleOdds": "+5500",
     "finalOdds": "+2200",
+    "qfOdds": "+375",
     "copy": "Bielsa's snarling, pressing Uruguay is all bite, talent, and red-card energy. Nobody enjoys playing them.",
     "draftCase": "A tough out with deep-run upside, Uruguay regularly steals wins from bigger names.",
     "risk": "Discipline issues are real, and they drew against Spain in the group stage."
@@ -355,6 +370,7 @@
     "flag": "https://flagcdn.com/w320/mx.png",
     "titleOdds": "+5500",
     "finalOdds": "+2200",
+    "qfOdds": "+320",
     "copy": "Hosts who open the whole tournament and always reach the round of 16, then panic. El Tri energy is unmatched.",
     "draftCase": "Host status combined with a soft group makes group wins very likely.",
     "risk": "The infamous quinto-partido curse is real, and Mexico rarely goes deep past the group stage."
@@ -370,6 +386,7 @@
     "flag": "https://flagcdn.com/w320/hr.png",
     "titleOdds": "+6500",
     "finalOdds": "+2500",
+    "qfOdds": "+450",
     "copy": "Modrić-era overtime merchants who turn every knockout into a penalty-shootout horror movie. Tiny country, enormous heart.",
     "draftCase": "Croatia always overperforms and wins shootouts, making them sneaky deep-run value.",
     "risk": "Old legs are a concern, and they start behind England in a tough group."
@@ -385,6 +402,7 @@
     "flag": "https://flagcdn.com/w320/tr.png",
     "titleOdds": "+7000",
     "finalOdds": "+3500",
+    "qfOdds": "+400",
     "copy": "Young, hot-headed, and bursting with talent in Yıldız, Türkiye delivers maximum drama per minute in the best possible way.",
     "draftCase": "An exciting attack that can outscore opponents and grab wins against anyone.",
     "risk": "Discipline and consistency wobble at the wrong moments, and they can beat themselves."
@@ -400,6 +418,7 @@
     "flag": "https://flagcdn.com/w320/ch.png",
     "titleOdds": "+7500",
     "finalOdds": "+2500",
+    "qfOdds": "+350",
     "copy": "Tournament cockroaches: impossible to kill and always lurking in the knockouts, boring in the most profitable way.",
     "draftCase": "Reliable knockout-reachers deliver steady wins and clean sheets every cycle.",
     "risk": "A limited ceiling means Switzerland rarely winds up as the team that actually wins it."
@@ -415,6 +434,7 @@
     "flag": "https://flagcdn.com/w320/ec.png",
     "titleOdds": "+8000",
     "finalOdds": "+3000",
+    "qfOdds": "+500",
     "copy": "Young, fearless, and defensively stingy, Ecuador are South America's quiet overachievers. Always tougher than the ranking suggests.",
     "draftCase": "Hard to beat, they can nick a clean sheet and a few important points.",
     "risk": "A goal-shy attack is a concern, and they drew Germany in the group."
@@ -430,6 +450,7 @@
     "flag": "https://flagcdn.com/w320/at.png",
     "titleOdds": "+10000",
     "finalOdds": "+3500",
+    "qfOdds": "+600",
     "copy": "Pressing, organized, and quietly good, Austria is the Red Bull-coded national team. Annoying to play against and easy to underrate.",
     "draftCase": "They can finish second in a soft group and steal wins from complacent opponents.",
     "risk": "A lack of a true superstar keeps the ceiling limited."
@@ -445,6 +466,7 @@
     "flag": "https://flagcdn.com/w320/sn.png",
     "titleOdds": "+15000",
     "finalOdds": "+4500",
+    "qfOdds": "+600",
     "copy": "Athletic, physical former African champs with talent running up and down the roster. The team nobody wants in their group.",
     "draftCase": "A strong squad that can grind out wins and has the tools to upset France.",
     "risk": "A brutal group featuring France and Norway is daunting, and their finishing can wobble."
@@ -460,6 +482,7 @@
     "flag": "https://flagcdn.com/w320/ca.png",
     "titleOdds": "+17500",
     "finalOdds": null,
+    "qfOdds": "+525",
     "copy": "Co-hosts with genuine pace in Davies and a chip on their shoulder. The fun underdog story nobody is ready for.",
     "draftCase": "A host boost plus a winnable group makes Canada a sneaky source of wins.",
     "risk": "Thin depth beyond the top names means elite sides can outclass them."
@@ -475,6 +498,7 @@
     "flag": "https://flagcdn.com/w320/ci.png",
     "titleOdds": "+17500",
     "finalOdds": null,
+    "qfOdds": "+750",
     "copy": "Reigning AFCON champs with pace and power to burn. The Elephants are a genuinely dangerous floater in this field.",
     "draftCase": "Talented and on form, they can spring an upset and win games against higher-ranked sides.",
     "risk": "A group draw with Germany is daunting, and their consistency is hit-or-miss."
@@ -490,6 +514,7 @@
     "flag": "https://flagcdn.com/w320/se.png",
     "titleOdds": "+17500",
     "finalOdds": null,
+    "qfOdds": "+700",
     "copy": "Back with a terrifying strike duo in Isak and Gyökeres that can bully anyone. The most dangerous medium team in the field.",
     "draftCase": "Two elite strikers equal goals and winnable games across the group stage.",
     "risk": "The defense and midfield are shakier than the attack suggests."
@@ -505,6 +530,7 @@
     "flag": "https://flagcdn.com/w320/gb-sct.png",
     "titleOdds": "+20000",
     "finalOdds": null,
+    "qfOdds": "+900",
     "copy": "The Tartan Army travels better than the team plays, but there is genuine grit here. Pure heart-on-sleeve tournament fun.",
     "draftCase": "They can nick a result, and the pick is mostly for the vibes and a possible upset.",
     "risk": "A group draw with Brazil is brutal, and Scotland historically exits early."
@@ -520,6 +546,7 @@
     "flag": "https://flagcdn.com/w320/py.png",
     "titleOdds": "+22500",
     "finalOdds": null,
+    "qfOdds": "+700",
     "copy": "Hard-nosed, defensively brutal South Americans who treat a 1-0 win as an art form. Nobody enjoys 90 minutes against them.",
     "draftCase": "A grind-it-out approach produces wins and clean sheets in a winnable group.",
     "risk": "An allergy to scoring keeps the ceiling very low."
@@ -535,6 +562,7 @@
     "flag": "https://flagcdn.com/w320/dz.png",
     "titleOdds": "+25000",
     "finalOdds": null,
+    "qfOdds": "+900",
     "copy": "Desert Foxes with flair and a point to prove after missing 2022. Mahrez-era talent remains, and there is plenty of bite.",
     "draftCase": "They can finish second in a soft group and bank meaningful wins.",
     "risk": "Streaky form and big-tournament wobbles are genuine concerns."
@@ -550,6 +578,7 @@
     "flag": "https://flagcdn.com/w320/ba.png",
     "titleOdds": "+30000",
     "finalOdds": null,
+    "qfOdds": "+900",
     "copy": "Džeko-led and full of fight, Bosnia and Herzegovina are back at the big dance with Balkan grit and just enough quality to ruin someone.",
     "draftCase": "They can snatch a win in a balanced group if they bring their best defensive discipline.",
     "risk": "An aging core and inconsistent form are the twin concerns around this squad."
@@ -565,6 +594,7 @@
     "flag": "https://flagcdn.com/w320/eg.png",
     "titleOdds": "+40000",
     "finalOdds": null,
+    "qfOdds": "+900",
     "copy": "Mo Salah has finally dragged Egypt to the big stage. This is basically a one-man Liverpool tribute act with goals attached.",
     "draftCase": "Salah penalties and a winnable group make wins plausible enough to take seriously.",
     "risk": "Heavily Salah-dependent and with little else up top, Egypt go as far as he carries them."
@@ -580,6 +610,7 @@
     "flag": "https://flagcdn.com/w320/gh.png",
     "titleOdds": "+40000",
     "finalOdds": null,
+    "qfOdds": "+900",
     "copy": "The Black Stars are back and still chasing that Suárez-shaped ghost from 2010. Talented, emotional, and must-watch.",
     "draftCase": "Athletic and dangerous, they can win a game and upset someone in a tough group.",
     "risk": "A tough group and a leaky defense are the two concerns that follow them everywhere."
@@ -595,6 +626,7 @@
     "flag": "https://flagcdn.com/w320/kr.png",
     "titleOdds": "+60000",
     "finalOdds": null,
+    "qfOdds": "+1000",
     "copy": "Son Heung-min running himself into the ground for 90 minutes, every match. Heart, pace, and a captain you will root for.",
     "draftCase": "A soft group, a real star, and decent win potential make South Korea worth a look.",
     "risk": "The squad is thin behind Son, and the defense leaks goals."
@@ -610,6 +642,7 @@
     "flag": "https://flagcdn.com/w320/cz.png",
     "titleOdds": "+60000",
     "finalOdds": null,
+    "qfOdds": "+900",
     "copy": "Organized, physical Central Europeans who always find one good tournament moment. Underrated and deeply stubborn.",
     "draftCase": "A soft group gives them a real shot at wins against beatable opponents.",
     "risk": "A lack of a true star and a one-paced style limit how far they can go."
@@ -625,6 +658,7 @@
     "flag": "https://flagcdn.com/w320/ir.png",
     "titleOdds": "+75000",
     "finalOdds": null,
+    "qfOdds": "+1000",
     "copy": "Perennial qualifiers with a rock-solid defense and Taremi up top. Always tougher than anyone expects.",
     "draftCase": "A stingy defense brings clean-sheet and point-stealing upside for patient drafters.",
     "risk": "A conservative style limits both goals and the prospect of deep runs."
@@ -640,6 +674,7 @@
     "flag": "https://flagcdn.com/w320/au.png",
     "titleOdds": "+100000",
     "finalOdds": null,
+    "qfOdds": "+1400",
     "copy": "The Socceroos: all effort, no quit, and a knack for one glorious tournament run every cycle. Lovable and genuinely hard to beat.",
     "draftCase": "Organized and gritty, they can grab a win and frustrate the hosts.",
     "risk": "Limited star power keeps them grounded, and goals come slowly."
@@ -655,6 +690,7 @@
     "flag": "https://flagcdn.com/w320/tn.png",
     "titleOdds": "+100000",
     "finalOdds": null,
+    "qfOdds": "+1600",
     "copy": "Organized, disciplined North Africans who specialize in nicking results off favorites. Frustrating in all the right ways.",
     "draftCase": "Defensive grit can steal points and produce the odd upset against bigger teams.",
     "risk": "A toothless attack keeps them grounded, and they rarely escape the group."
@@ -670,6 +706,7 @@
     "flag": "https://flagcdn.com/w320/cd.png",
     "titleOdds": "+200000",
     "finalOdds": null,
+    "qfOdds": "+1800",
     "copy": "Athletic, unpredictable, and finally back at a World Cup. The Leopards are a true wildcard that almost nobody has scouted properly.",
     "draftCase": "Upset potential in a winnable group gives them some real draft value.",
     "risk": "Inexperience at this level and a raw defense are genuine problems."
@@ -685,6 +722,7 @@
     "flag": "https://flagcdn.com/w320/qa.png",
     "titleOdds": "+250000",
     "finalOdds": null,
+    "qfOdds": "+4000",
     "copy": "Asian champions trying to prove 2022 was not just a host pass. Technical, organized, and quietly improving.",
     "draftCase": "They can sneak a win in a balanced group if the conditions are right.",
     "risk": "Still unproven against elite sides, with a low ceiling on what they can achieve."
@@ -700,6 +738,7 @@
     "flag": "https://flagcdn.com/w320/sa.png",
     "titleOdds": "+250000",
     "finalOdds": null,
+    "qfOdds": "+1600",
     "copy": "The team that beat Argentina in 2022, which proves they can ruin anyone's afternoon when conditions align. Pure chaos merchants.",
     "draftCase": "Upset potential is real, and they could steal a shock win on the right day.",
     "risk": "Inconsistent by nature, and a tough group with Spain and Uruguay awaits."
@@ -715,6 +754,7 @@
     "flag": "https://flagcdn.com/w320/za.png",
     "titleOdds": "+250000",
     "finalOdds": null,
+    "qfOdds": "+1600",
     "copy": "Bafana Bafana back on the big stage, young and fearless, opening against Mexico with nothing-to-lose energy.",
     "draftCase": "A soft group gives them real win and upset chances worth considering.",
     "risk": "Inexperience at this level can make them naive defensively at the worst moments."
@@ -730,6 +770,7 @@
     "flag": "https://flagcdn.com/w320/uz.png",
     "titleOdds": "+250000",
     "finalOdds": null,
+    "qfOdds": "+4000",
     "copy": "First-ever World Cup, earned the hard way. The ultimate 'who are these guys' sleeper of the entire draft.",
     "draftCase": "Pure novelty combined with a shot at a debut win makes the pick worth taking late.",
     "risk": "Debutants facing Portugal and Colombia are likely overmatched at this level."
@@ -745,6 +786,7 @@
     "flag": "https://flagcdn.com/w320/iq.png",
     "titleOdds": "+250000",
     "finalOdds": null,
+    "qfOdds": "+2500",
     "copy": "Back at a World Cup after a long wait, with passionate fans and nothing to lose. Wildcard energy in a brutal group.",
     "draftCase": "Long-shot upset value is about the only case to make here.",
     "risk": "A group draw with France means goals will be very scarce."
@@ -760,6 +802,7 @@
     "flag": "https://flagcdn.com/w320/cv.png",
     "titleOdds": "+250000",
     "finalOdds": null,
+    "qfOdds": "+4000",
     "copy": "Population half a million, now at a World Cup. The Blue Sharks are the feel-good story of the whole tournament.",
     "draftCase": "Buy the fairy tale, because an upset is not impossible in a group where anything can happen.",
     "risk": "The smallest nation in the field faces a tough group and is likely three-and-out."
@@ -775,6 +818,7 @@
     "flag": "https://flagcdn.com/w320/pa.png",
     "titleOdds": "+250000",
     "finalOdds": null,
+    "qfOdds": "+2500",
     "copy": "CONCACAF scrappers who love a giant-killing and a yellow card. Panama will absolutely try to ruin England's day.",
     "draftCase": "Upset potential and CONCACAF grit give them a puncher's chance.",
     "risk": "A group with England and Croatia leaves thin margins for error."
@@ -790,6 +834,7 @@
     "flag": "https://flagcdn.com/w320/cw.png",
     "titleOdds": "+250000",
     "finalOdds": null,
+    "qfOdds": "+12500",
     "copy": "An island of 150,000 at the World Cup, stacked with Dutch-raised talent. The most lovable long shot in the entire field.",
     "draftCase": "Pure novelty applies here, and a single point would be genuinely historic.",
     "risk": "The lowest-ranked nation in the field draws a brutal group featuring Germany."
@@ -805,6 +850,7 @@
     "flag": "https://flagcdn.com/w320/ht.png",
     "titleOdds": "+250000",
     "finalOdds": null,
+    "qfOdds": "+10000",
     "copy": "Back at a World Cup after 50 years, against every conceivable odd. Heart, history, and a whole nation watching.",
     "draftCase": "This is a feel-good pick where any positive result would be a triumph.",
     "risk": "A group draw with Brazil puts them among the deepest underdogs in the tournament."
@@ -820,6 +866,7 @@
     "flag": "https://flagcdn.com/w320/nz.png",
     "titleOdds": "+250000",
     "finalOdds": null,
+    "qfOdds": "+2800",
     "copy": "The All Whites went unbeaten in 2010 with a run of draws, and they would love a repeat. Lovable Oceania grinders.",
     "draftCase": "Pure underdog charm applies here, and a draw would feel like a famous victory.",
     "risk": "The weakest confederation means goals are very hard to come by at this level."
@@ -835,6 +882,7 @@
     "flag": "https://flagcdn.com/w320/jo.png",
     "titleOdds": "+250000",
     "finalOdds": null,
+    "qfOdds": "+5000",
     "copy": "First-ever World Cup after a stunning qualifying run. Pure house-money energy, and they are loving every second.",
     "draftCase": "Debut novelty and a soft-ish group offer a genuine upset shot for the brave drafter.",
     "risk": "Debutants facing Argentina are likely to be outgunned when it matters most."

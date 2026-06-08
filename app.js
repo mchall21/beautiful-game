@@ -45,7 +45,7 @@
     const f = items.filter(i => i.v != null && i.v !== "");
     if (!f.length) return "";
     return `<div class="oddsbar">${f.map(i =>
-      `<span class="ochip"><span class="ok">${esc(i.k)}</span><span class="ov tnum">${esc(i.v)}</span></span>`).join("")}</div>`;
+      `<span class="ochip${i.line ? " ochip-line" : ""}"><span class="ok">${esc(i.k)}</span><span class="ov tnum">${esc(i.v)}</span>${i.sub ? `<span class="osub tnum">${esc(i.sub)}</span>` : ""}</span>`).join("")}</div>`;
   }
   function winsValue(c) {
     if (c.winsLine == null) return null;
@@ -283,8 +283,9 @@
 
   function countryCard(c) {
     const odds = oddsBar([
-      { k: "To win", v: impliedPct(c.titleOdds) },
+      { k: "To QF", v: impliedPct(c.qfOdds) },
       { k: "To final", v: impliedPct(c.finalOdds) },
+      { k: "To win", v: impliedPct(c.titleOdds) },
     ]);
     return `
       <div class="acard">
@@ -315,8 +316,8 @@
     const c = GC.countryByCode(a.cc);
     const odds = oddsBar([
       { k: "Golden Boot", v: impliedPct(a.bootOdds) },
-      { k: a.goalsLine ? "Over " + a.goalsLine + " goals" : "Goals", v: a.goalsLine ? impliedPct(a.goalsOver) : null },
-      { k: a.gaLine ? "Over " + a.gaLine + " G+A" : "G+A", v: a.gaLine ? impliedPct(a.gaOver) : null },
+      { k: "Goals O/U", v: a.goalsLine != null ? String(a.goalsLine) : null, sub: a.goalsLine != null ? impliedPct(a.goalsOver) + " over" : null, line: true },
+      { k: "G+A O/U", v: a.gaLine != null ? String(a.gaLine) : null, sub: a.gaLine != null ? impliedPct(a.gaOver) + " over" : null, line: true },
     ]);
     return `
       <div class="acard">

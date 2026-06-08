@@ -161,6 +161,8 @@ p { text-wrap: pretty; }
 .ochip { display: inline-flex; flex-direction: column; gap: 2px; background: var(--paper-2); border: 1px solid var(--border-hairline); border-radius: var(--radius-sm); padding: 6px 9px; min-width: 0; }
 .ochip .ok { font-family: var(--font-mono); font-size: 8.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-subtle); }
 .ochip .ov { font-size: 12.5px; font-weight: 800; letter-spacing: -0.01em; color: var(--accent); line-height: 1.1; }
+.ochip-line .ov { font-size: 18px; letter-spacing: -0.02em; }
+.ochip .osub { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.04em; color: var(--fg-subtle); margin-top: 2px; }
 
 .vibe {
   display: inline-flex; align-items: center; gap: 6px;
