@@ -270,11 +270,6 @@
               <div class="prize-foot"><span>Live across the tournament</span><span>Cash prize</span></div>
             </div>`).join("")}
         </div>
-        <div class="section-gap"></div>
-        <div class="note-band">
-          The pot shown is <b>${money(P.pot)}</b> from a <b>${money(P.buyIn)}</b> buy-in across <b>${P.teams}</b> squads.
-          These are placeholder figures, so adjust them in <b>data.js</b> if your pool runs different stakes.
-        </div>
       </div>`;
   }
 
