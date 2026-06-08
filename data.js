@@ -148,7 +148,7 @@
     "finalOdds": "+240",
     "qfOdds": "-130",
     "copy": "The Death Star with better cheekbones and Mbappé at warp speed. Draft them if you enjoy rooting for inevitability.",
-    "draftCase": "Stacked, deep, and Mbappé-powered, with strong winner odds and Golden Boot equity baked in.",
+    "draftCase": "Stacked and deep, with strong odds to win it all and reach the final, plus the wins that come with a deep run.",
     "risk": "A tough group featuring Norway and Senegal looms early, and locker-room drama is a French tradition."
   },
   {
@@ -164,7 +164,7 @@
     "finalOdds": "+340",
     "qfOdds": "-135",
     "copy": "Forever the bridesmaid and finally with the talent, England get an easy group, Kane up top, and a nation that will lose its mind either way.",
-    "draftCase": "A soft group means early wins, and Kane gives real Golden Boot upside.",
+    "draftCase": "A soft group means early wins, and a deep England run keeps the combined-wins total climbing.",
     "risk": "Knockout chokes are practically a national pastime, and manager caution can stall them when it matters."
   },
   {
