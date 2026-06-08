@@ -45,6 +45,8 @@
     "id": "winner",
     "name": "Own the World Cup Winner",
     "amount": 400,
+    "cat": "country",
+    "catLabel": "Your countries",
     "how": "Own the country that lifts the trophy.",
     "blurb": "This is the headline prize. Draft the eventual champion and you take the single biggest slice of the pot."
   },
@@ -52,6 +54,8 @@
     "id": "wins",
     "name": "Most Combined Country Wins",
     "amount": 300,
+    "cat": "country",
+    "catLabel": "Your countries",
     "how": "Add up every win across your three countries.",
     "blurb": "This prize rewards depth across your roster rather than a single horse. A knockout win on penalties counts."
   },
@@ -59,6 +63,8 @@
     "id": "runner",
     "name": "Own the Runner-Up",
     "amount": 250,
+    "cat": "country",
+    "catLabel": "Your countries",
     "how": "Own the team that loses the final.",
     "blurb": "Reaching the final and losing it still pays out here, so the team that falls at the last hurdle is worth real money."
   },
@@ -66,6 +72,8 @@
     "id": "boot",
     "name": "Own the Golden Boot Winner",
     "amount": 250,
+    "cat": "attacker",
+    "catLabel": "Your attackers",
     "how": "Own the tournament's top scorer.",
     "blurb": "This is the official FIFA award. If one of your two attackers finishes as top scorer, the prize is yours."
   },
@@ -73,6 +81,8 @@
     "id": "pair",
     "name": "Best Attacker Pair (G+A)",
     "amount": 200,
+    "cat": "attacker",
+    "catLabel": "Your attackers",
     "how": "Combine goals plus assists from your two attackers.",
     "blurb": "This prize rewards a balanced forward line. Shootout goals do not count toward the total."
   },
@@ -80,6 +90,8 @@
     "id": "keeper",
     "name": "Most Goalkeeper Total Saves",
     "amount": 200,
+    "cat": "keeper",
+    "catLabel": "Your keeper",
     "how": "Count every save your goalkeeper makes, shootouts included.",
     "blurb": "We moved off clean sheets because they tie too easily. Total saves rewards a busy keeper who bails his team out all tournament, and every stop counts toward the total."
   }

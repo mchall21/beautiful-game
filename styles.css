@@ -290,6 +290,9 @@ p { text-wrap: pretty; }
 
 /* draft order strip */
 .draft-rounds { display: grid; grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); gap: 12px; }
+.draft-rounds.slots-6 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 720px) { .draft-rounds.slots-6 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 460px) { .draft-rounds.slots-6 { grid-template-columns: 1fr; } }
 .dround { background: var(--card); border: 1px solid var(--border-soft); border-radius: var(--radius-md); padding: 16px 14px; }
 .dround .rn { font-family: var(--font-mono); font-size: 10px; color: var(--fg-subtle); letter-spacing: 0.1em; }
 .dround .rt { font-size: 16px; font-weight: 800; margin-top: 6px; letter-spacing: -0.01em; }
@@ -400,7 +403,7 @@ p { text-wrap: pretty; }
 .watch .wn { font-size: 13px; color: var(--fg-muted); margin-top: 6px; line-height: 1.5; }
 
 /* section heading */
-.sub-head { display: flex; align-items: baseline; gap: 12px; margin: 0 0 18px; }
+.sub-head { display: flex; align-items: baseline; gap: 12px; margin: 0 0 18px; flex-wrap: wrap; }
 .sub-head h2 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); letter-spacing: -0.025em; }
 .sub-head .meta { font-family: var(--font-mono); font-size: 11px; color: var(--fg-subtle); text-transform: uppercase; letter-spacing: 0.1em; }
 
@@ -418,8 +421,39 @@ p { text-wrap: pretty; }
 .gc-footer .r { color: var(--fg-on-dark-muted); display: flex; gap: 16px; flex-wrap: wrap; }
 .gc-footer .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); display: inline-block; margin-right: 7px; }
 
-@media (max-width: 640px) {
+/* prize category label (color-coded to squad categories) */
+.prize-cat { font-family: var(--font-mono); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.potseg { font-weight: 700; }
+
+/* ============================================================ RESPONSIVE */
+@media (max-width: 720px) {
+  /* header becomes a wordmark row above a horizontally scrollable nav */
+  .gc-header { height: auto; flex-direction: column; align-items: stretch; padding: 0; gap: 0; }
+  .gc-header > div:first-child { padding: 11px clamp(16px, 4vw, 56px) 0; }
   .gc-wordmark-sub { display: none; }
-  .gc-nav { gap: 14px; }
+  .gc-nav { gap: 20px; padding: 9px clamp(16px, 4vw, 56px); overflow-x: auto; border-top: 1px solid var(--border-hairline); scrollbar-width: none; }
+  .gc-nav::-webkit-scrollbar { display: none; }
+  .gc-nav-link { white-space: nowrap; flex: none; padding: 2px 0; }
   .gc-pot-pill { display: none; }
+
+  .hero { padding: 34px 0 26px; }
+  .hero h1 { font-size: clamp(2.1rem, 11vw, 3.4rem); }
+  .hero-lead { font-size: 1.05rem; }
+  .gc-page-head { padding: 28px 0 22px; }
+
+  /* schedule fixtures: tighten the three-column row */
+  .fixtures.wide .frow { grid-template-columns: 1fr auto 1fr; gap: 9px; padding: 10px 12px; }
+  .fteam { font-size: 12.5px; gap: 6px; }
+  .phase { grid-template-columns: 1fr; gap: 4px; }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .gc-page-title { font-size: clamp(1.8rem, 9vw, 2.4rem); }
+  .statcell { padding: 16px 14px; }
+  .statcell .v { font-size: clamp(1.4rem, 8vw, 2rem); }
+  .acard-stat .v { font-size: 14px; }
+  .fteam { font-size: 12px; }
+  .fteam .flagimg.sm { width: 18px; height: 12px; }
+  .prize-amount { font-size: 16px; }
 }

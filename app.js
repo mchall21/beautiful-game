@@ -59,6 +59,20 @@
     if (a.goalsLine == null) return null;
     return a.goalsOver ? `${a.goalsLine} (o ${a.goalsOver} / u ${a.goalsUnder})` : `${a.goalsLine}`;
   }
+  // American odds -> implied probability, shown as a percentage.
+  function impliedPct(odds) {
+    if (odds == null || odds === "") return null;
+    const n = parseInt(String(odds).trim().replace("+", ""), 10);
+    if (isNaN(n)) return null;
+    const p = (n < 0 ? -n / (-n + 100) : 100 / (n + 100)) * 100;
+    if (p > 0 && p < 1) return "<1%";
+    return Math.round(p) + "%";
+  }
+  const CAT_COLOR = { country: "var(--accent)", attacker: "var(--hot)", keeper: "var(--ink)" };
+  function cleanRole(role) {
+    const r = String(role || "").replace(/golden boot[^;]*;?\s*/i, "").replace(/^[,;\s]+/, "").trim();
+    return r ? r.charAt(0).toUpperCase() + r.slice(1) : "Forward";
+  }
 
   /* ============================================================ OVERVIEW */
   function Overview() {
@@ -115,6 +129,16 @@
   /* ============================================================ RULES */
   function Rules() {
     const D = GC.DRAFT;
+    // one card per roster slot
+    const slotType = { country: "Country", attacker: "Attacker", goalkeeper: "Goalkeeper" };
+    const slots = [
+      { cls: "country", k: "Country 1 of 3", note: "Your anchor nation. A title contender drives the winner and runner-up prizes." },
+      { cls: "country", k: "Country 2 of 3", note: "A wins engine. Pick a team that racks up victories home and away." },
+      { cls: "country", k: "Country 3 of 3", note: "A dark horse or host that adds combined wins and upset upside." },
+      { cls: "attacker", k: "Attacker 1 of 2", note: "A Golden Boot contender for the top-scorer prize." },
+      { cls: "attacker", k: "Attacker 2 of 2", note: "A second scorer to complete your goals-plus-assists pair." },
+      { cls: "goalkeeper", k: "Keeper 1 of 1", note: "A busy keeper for the total-saves prize." },
+    ];
     // snake board + sample draft (from the 4th slot)
     const youIdx = 3;
     const sample = [
@@ -153,12 +177,12 @@
 
         <div class="sub-head"><h2>Your squad</h2><span class="meta">${esc(D.rosterShape)}</span></div>
         <p class="gc-page-sub" style="margin:0 0 18px">${esc(D.summary)}</p>
-        <div class="draft-rounds">
-          ${D.composition.map(c => `
-            <div class="dround ${c.cls}">
-              <div class="rn">${esc(c.slots)} ${esc(c.slots) === "1" ? "SLOT" : "SLOTS"}</div>
-              <div class="rt">${esc(c.type)}</div>
-              <div class="rd">${esc(c.note)}</div>
+        <div class="draft-rounds slots-6">
+          ${slots.map(s => `
+            <div class="dround ${s.cls}">
+              <div class="rn">${esc(s.k)}</div>
+              <div class="rt">${esc(slotType[s.cls])}</div>
+              <div class="rd">${esc(s.note)}</div>
             </div>`).join("")}
         </div>
         <div class="section-gap"></div>
@@ -214,7 +238,6 @@
   function Payouts() {
     const P = GC.POOL;
     const total = GC.PRIZES.reduce((t, p) => t + p.amount, 0);
-    const segColors = ["#1E53FF", "#15161B", "#3F6BFF", "#45474F", "#FF2D6E", "#8A8D96"];
     return `
       <div class="gc-container">
         <div class="gc-page-head">
@@ -225,16 +248,22 @@
         </div>
 
         <div class="potbar" title="How the pot splits">
-          ${GC.PRIZES.map((p, i) => `<div class="potseg" style="background:${segColors[i % segColors.length]};flex:${p.amount}">${money(p.amount)}</div>`).join("")}
+          ${GC.PRIZES.map(p => `<div class="potseg" style="background:${CAT_COLOR[p.cat]};flex:${p.amount}">${money(p.amount)}</div>`).join("")}
+        </div>
+        <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-family:var(--font-mono);font-size:11px;color:var(--fg-muted);align-items:center">
+          <span style="display:inline-flex;align-items:center;gap:7px"><span class="cat-dot country"></span> Country prizes</span>
+          <span style="display:inline-flex;align-items:center;gap:7px"><span class="cat-dot attacker"></span> Attacker prizes</span>
+          <span style="display:inline-flex;align-items:center;gap:7px"><span class="cat-dot keeper"></span> Keeper prize</span>
         </div>
         <div class="section-gap"></div>
 
         <div class="prizegrid">
           ${GC.PRIZES.map(p => `
-            <div class="prize">
+            <div class="prize" style="border-left:3px solid ${CAT_COLOR[p.cat]}">
+              <div class="prize-cat" style="color:${CAT_COLOR[p.cat]}">${esc(p.catLabel)}</div>
               <div class="prize-head">
                 <div class="prize-title">${esc(p.name)}</div>
-                <div class="prize-amount tnum">${money(p.amount)}</div>
+                <div class="prize-amount tnum" style="background:${CAT_COLOR[p.cat]}">${money(p.amount)}</div>
               </div>
               <div class="prize-how">${esc(p.how)}</div>
               <p class="prize-blurb">${esc(p.blurb)}</p>
@@ -254,9 +283,8 @@
 
   function countryCard(c) {
     const odds = oddsBar([
-      { k: "To win", v: c.titleOdds },
-      { k: "To final", v: c.finalOdds },
-      { k: "Wins O/U", v: winsValue(c) },
+      { k: "To win", v: impliedPct(c.titleOdds) },
+      { k: "To final", v: impliedPct(c.finalOdds) },
     ]);
     return `
       <div class="acard">
@@ -286,9 +314,9 @@
   function attackerCard(a) {
     const c = GC.countryByCode(a.cc);
     const odds = oddsBar([
-      { k: "Golden Boot", v: a.bootOdds || (a.gbRank ? "#" + a.gbRank : null) },
-      { k: "Goals O/U", v: goalsValue(a) },
-      { k: "Goals+Assists O/U", v: gaValue(a) },
+      { k: "Golden Boot", v: impliedPct(a.bootOdds) },
+      { k: a.goalsLine ? "Over " + a.goalsLine + " goals" : "Goals", v: a.goalsLine ? impliedPct(a.goalsOver) : null },
+      { k: a.gaLine ? "Over " + a.gaLine + " G+A" : "G+A", v: a.gaLine ? impliedPct(a.gaOver) : null },
     ]);
     return `
       <div class="acard">
@@ -305,7 +333,7 @@
         <div class="acard-body">
           ${odds}
           <div class="acard-line"><span class="lbl">The read</span>${esc(a.copy)}</div>
-          <div class="acard-line"><span class="lbl">Role · </span>${esc(a.role)} · ${esc(a.pos)}</div>
+          <div class="acard-line"><span class="lbl">Role · </span>${esc(cleanRole(a.role))} · ${esc(a.pos)}</div>
           <div class="acard-line"><span class="lbl">Reason to draft</span>${esc(a.draftCase)}</div>
           <div class="acard-fun"><span class="lbl">Risk · </span>${esc(a.risk)}</div>
         </div>
@@ -318,7 +346,7 @@
 
   function keeperCard(g) {
     const c = GC.countryByCode(g.cc);
-    const odds = oddsBar([{ k: "Golden Glove", v: g.ggOdds }]);
+    const odds = oddsBar([{ k: "Golden Glove", v: impliedPct(g.ggOdds) }]);
     return `
       <div class="acard">
         <div class="acard-top">
